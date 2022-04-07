@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: auto;
+            width: 1404px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .searchbar {
+            background-color: #dbdddf;
+            text-align: center;
+            width: 1404px;
+        }
+
+        .bar {
+            height: 25px;
+            width: 250px;
+            padding-top: 10px;
+        }
+
+        .buttons {
+            padding: 0 2px;
+        }
+
+        button {
+            margin: 1px;
+            height: 22px;
+            width: 110px;
+        }
+
+        .row {
+            width: 100%;
+            height: 86px;
+        }
+
+        .alt-row {
+            display: flex;
+            text-align: center;
+            flex: 1;
+        }
+
+        .col-sm-4 {
+            flex: 0.4;
+            background-color: #7ee5da;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .col-sm-3 {
+            flex: 0.2;
+            background-color: #70ccc2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+        }
+
+        .col-sm-5 {
+            flex: 0.4;
+            background-color: #62b3aa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        a{
+            color: blue;
+        }
+
+        .copyright{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input::placeholder{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="logo">
+            <img src="logo/google.jpg" alt="">
+        </div>
+
+        <div class="searchbar">
+            <p>
+                Search the web using Google!
+            </p>
+            <input class="bar" type="text">
+            <div class="buttons">
+                <button>Google Search</button>
+                <button>I'm feeling lucky</button>
+            </div>
+        </div>
+
+        <div class="row">
+           <div class="alt-row">
+            <div class="col-sm-4">
+                <p>Special Searches</p>
+                <a href="https://www.stanford.edu/search/">Standford Search</a> 
+                <a href="https://www.lifewire.com/uses-of-linux-command-find-2201100">Linux Search</a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://support.google.com/">Help!</a> 
+                <a href="https://about.google/">About Google!</a> 
+                <a href="https://about.google/stories/">Company Info</a> 
+                <a href="https://www.google.com/doodles">Google! Logos</a>
+            </div>
+            <div class="col-sm-5">
+                <p>Get Google</p>
+                <p>Updates Monthly:</p>
+                <input type="text" placeholder="your e-mail">
+                <div>
+                    <button>Subscribe</button>
+                    <a href="https://archive.org/">Archive</a>
+                </div>
+            </div>
+           </div>
+        </div>
+
+        <div>
+            <p class="copyright">
+                Copyright ©1998 Google Inc.
+            </p>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
